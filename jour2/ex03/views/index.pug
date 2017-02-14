@@ -1,0 +1,18 @@
+html
+    head
+        title= title
+        link( rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css")
+        meta( name="viewport" content="width=device-width, initial-scale=1")
+ 
+    body
+        ul
+            each message in messages
+                li On #{message.date}, #{message.name} wrote: #{message.message}
+
+        form.pure-form(method="POST")
+            fieldset
+                legend  Add a message
+                input(name="name", placeholder="Name")
+
+                input(name="message", placeholder="Message")
+                button.pure-button.pure-button-primary(type="submit") Add message
