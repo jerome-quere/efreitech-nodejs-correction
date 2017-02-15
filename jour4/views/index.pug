@@ -1,0 +1,19 @@
+html
+    head
+        title De ouf
+    body
+        table
+            tr
+                th Date
+                    th Name
+                    th Message
+            each message in messages
+                tr
+                    td= message.date
+                    td= message.name
+                    td= message.message
+
+        form(method="post")
+            input(name="name")
+            input(name="message")
+            input(type="submit")
