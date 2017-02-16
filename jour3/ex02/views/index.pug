@@ -1,0 +1,11 @@
+html
+    head
+        style
+            | input, textarea { display: block }
+    body
+        if success
+            h3 Success
+        form(method="post")
+            input(name="subject", placeholder="Subject")
+            textarea(name="message", placeholder="Message")
+            input(type="submit" value="Envoyer")

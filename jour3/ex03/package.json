@@ -1,0 +1,20 @@
+{
+  "name": "ex03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex03.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta9",
+    "redis": "^2.6.5",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  }
+}
